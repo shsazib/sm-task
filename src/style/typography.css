@@ -44,3 +44,23 @@
 .large-heading {
   @apply text-5xl md:text-6xl lg:text-7xl lg:leading-[80px] font-semibold;
 }
+
+.day-btn:hover {
+  background-color: #2564eb3a;
+  color: #2563eb;
+}
+
+.day-btn.active {
+  background-color: #2564eb3a;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.day-btn.today::after {
+  content: '·';
+  display: block;
+  text-align: center;
+  line-height: 0;
+  color: #2563eb;
+  font-size: 1.5rem;
+}

@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SM Technology</title>
+  <link rel="icon" type="image/png" href="./public/Logo.png">
 
   <!-- CSS Link -->
   <link rel="stylesheet" href="/src/style/index.css" />
@@ -496,10 +497,174 @@
   </section>
 
   <!-- ══════════════════════════════════════════
-         SERVICES SECTION
-    ══════════════════════════════════════════ -->
-  <section id="services" class="min-h-screen bg-gray-50 flex items-center justify-center">
-    service
+       CONTACT US SECTION
+  ══════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container mx-auto py-24 px-4">
+      <div class="pb-16">
+        <div class="flex items-center justify-center gap-2 mx-auto mb-3">
+          <img src="./public/amazon.png" alt="Amazon">
+          <p>Contact <span class="text-text-secondary">Us</span></p>
+        </div>
+        <h1 class="text-center pb-4">Let's Scale Your <span class="text-text-secondary">Business!</span></h1>
+        <p class="text-center opacity-80 text-lg">FINTRIXX – Your Amazon Growth Partner</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+        <div class="flex flex-col md:flex-row">
+          <!-- Left panel -->
+          <div class="flex-1 p-8 border-b md:border-b-0 md:border-r border-gray-200">
+            <p class="text-xs text-gray-500 uppercase tracking-widest mb-1">Naim</p>
+            <h1 class="text-2xl font-bold text-gray-900 leading-snug mb-5">
+              Book Your Strategy Session: Accelerate Your Growth!
+            </h1>
+            <div class="flex items-center gap-2 text-gray-500 text-sm mb-3">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+              30 min
+            </div>
+            <div class="flex items-center gap-2 text-gray-500 text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+              Web conferencing details provided upon confirmation.
+            </div>
+          </div>
+
+          <!-- Right panel -->
+          <div class="flex-1 p-8 relative overflow-hidden">
+
+            <!-- Powered by Calendly Badge -->
+            <div class="absolute top-0 right-0 w-[210px] h-[120px] overflow-hidden">
+              <div class="absolute top-[10px] right-[-30px] w-[120px] bg-gray-600 text-white text-center text-[9px] py-[5px] rotate-45">
+                POWERED BY<br>Calendly
+              </div>
+            </div>
+
+            <h2 class="text-xl font-semibold text-gray-900 mb-6">Select a Date & Time</h2>
+
+            <!-- Month Navigation -->
+            <div class="flex items-center justify-between mb-5">
+              <button class="p-1 rounded-full hover:bg-gray-100 text-gray-500">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+              <span class="font-semibold text-gray-800">March 2025</span>
+              <button class="p-1 rounded-full hover:bg-gray-100 text-blue-600">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Day headers -->
+            <div class="grid grid-cols-7 text-center text-xs font-semibold text-gray-400 mb-2">
+              <div>MON</div>
+              <div>TUE</div>
+              <div>WED</div>
+              <div>THU</div>
+              <div>FRI</div>
+              <div>SAT</div>
+              <div>SUN</div>
+            </div>
+
+            <!-- Calendar grid -->
+            <div class="grid grid-cols-7 text-center text-sm" id="calendar">
+
+              <!-- Row 1 -->
+              <div class="h-10 flex items-center justify-center"></div>
+              <div class="h-10 flex items-center justify-center"></div>
+              <div class="h-10 flex items-center justify-center"></div>
+              <div class="h-10 flex items-center justify-center"></div>
+              <div class="h-10 flex items-center justify-center"></div>
+              <div class="h-10 flex items-center justify-center text-gray-400">1</div>
+              <div class="h-10 flex items-center justify-center text-gray-400">2</div>
+
+              <!-- Row 2 -->
+              <div class="h-10 flex items-center justify-center text-gray-400">3</div>
+              <div class="h-10 flex items-center justify-center text-gray-400">4</div>
+              <div class="h-10 flex items-center justify-center">
+                <button class="day-btn today w-9 h-9 rounded-full flex items-center justify-center text-gray-700">5</button>
+              </div>
+              <div class="h-10 flex items-center justify-center">
+                <button class="day-btn active w-9 h-9 rounded-full flex items-center justify-center">6</button>
+              </div>
+              <div class="h-10 flex items-center justify-center">
+                <button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">7</button>
+              </div>
+              <div class="h-10 flex items-center justify-center text-gray-400">8</div>
+              <div class="h-10 flex items-center justify-center text-gray-400">9</div>
+
+              <!-- Row 3 -->
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">10</button></div>
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">11</button></div>
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">12</button></div>
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">13</button></div>
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">14</button></div>
+              <div class="h-10 flex items-center justify-center text-gray-400">15</div>
+              <div class="h-10 flex items-center justify-center text-gray-400">16</div>
+
+              <!-- Row 4 -->
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">17</button></div>
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">18</button></div>
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">19</button></div>
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">20</button></div>
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">21</button></div>
+              <div class="h-10 flex items-center justify-center text-gray-400">22</div>
+              <div class="h-10 flex items-center justify-center text-gray-400">23</div>
+
+              <!-- Row 5 -->
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">24</button></div>
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">25</button></div>
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">26</button></div>
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">27</button></div>
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">28</button></div>
+              <div class="h-10 flex items-center justify-center text-gray-400">29</div>
+              <div class="h-10 flex items-center justify-center text-gray-400">30</div>
+
+              <!-- Row 6 -->
+              <div class="h-10 flex items-center justify-center"><button class="day-btn w-9 h-9 rounded-full flex items-center justify-center text-blue-600 font-medium">31</button></div>
+              <div class="h-10"></div>
+              <div class="h-10"></div>
+              <div class="h-10"></div>
+              <div class="h-10"></div>
+              <div class="h-10"></div>
+              <div class="h-10"></div>
+            </div>
+
+            <!-- Timezone -->
+            <div class="mt-5 flex items-center gap-2 text-text-muted">
+              <span class="font-medium">Time zone</span>
+            </div>
+            <div class="mt-1 flex items-center gap-1 text-sm cursor-pointer hover:underline ml-6">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                <path d="M2 12h20" />
+              </svg>
+              Asia/Dhaka (3:00pm) ▾
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+      </div>
+      <div class="border-t border-border-base px-8 py-3 flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-10 text-xs text-text-muted mx-auto">
+        <div class="flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          leadsbridgeademo@example.com
+        </div>
+        <div>
+          <span class="text-yellow-500 font-medium">Note:</span> Have a question? Need a strategy? We're here to help.
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ══════════════════════════════════════════

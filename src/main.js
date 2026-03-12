@@ -65,3 +65,11 @@
         }
       });
     });
+
+    // Click to select a date
+    document.querySelectorAll('.day-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
