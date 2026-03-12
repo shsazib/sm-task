@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SM Technology</title>
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="/src/style/index.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ══════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════ -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-md md:bg-transparent">
+    <div class="container mx-auto flex items-center justify-between py-6 px-4">
+
+      <!-- Logo -->
+      <a href="/" class="shrink-0 w-8 h-8">
+        <img src="/Logo.png" alt="Logo" />
+      </a>
+
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 lg:gap-12">
+        <div class="md:flex items-center gap-6 lg:gap-8">
+          <a href="#services" class="transition duration-200 hover:text-primary">Services</a>
+          <a href="#about" class="transition duration-200 hover:text-primary">About</a>
+          <a href="#contact" class="transition duration-200 hover:text-primary">Contact</a>
+        </div>
+        <a href="#consultation" class="btn-primary-sm">
+          Book a Free Consultation
+        </a>
+      </div>
+
+      <!-- Hamburger -->
+      <button id="hamburger" aria-expanded="false" aria-label="Toggle menu" class="md:hidden flex flex-col items-center justify-center gap-1.5 w-9 h-9 [&.open_span:nth-child(1)]:translate-y-2 [&.open_span:nth-child(1)]:rotate-45 [&.open_span:nth-child(2)]:opacity-0 [&.open_span:nth-child(3)]:-translate-y-2 [&.open_span:nth-child(3)]:-rotate-45">
+        <span class="block w-5 h-0.5 bg-current rounded-sm transition-transform duration-300 origin-center"></span>
+        <span class="block w-5 h-0.5 bg-current rounded-sm transition-opacity duration-300"></span>
+        <span class="block w-5 h-0.5 bg-current rounded-sm transition-transform duration-300 origin-center"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden overflow-hidden max-h-0 opacity-0 transition-all duration-300 [&.open]:max-h-[420px] [&.open]:opacity-100 bg-white">
+      <div class="container mx-auto flex flex-col gap-4 py-4">
+        <a href="#services" class="hover:text-primary transition-colors duration-200 text-center">Services</a>
+        <a href="#about" class="hover:text-primary transition-colors duration-200 text-center">About</a>
+        <a href="#contact" class="hover:text-primary transition-colors duration-200 text-center">Contact</a>
+        <div class="w-fit mx-auto">
+          <button class="btn-primary-sm">Book a Free Consultation</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════════ -->
+  <section id="hero" class="min-h-screen bg-gradient-to-b from-white to-[#ffe7bb] overflow-x-hidden flex items-center justify-center">
+    <div class="grid justify-center relative px-4">
+      <div class="flex items-center gap-2 mx-auto mb-4">
+        <img src="./public/amazon.png" alt="Amazon">
+        <p>Your Full-Service <span class="text-text-secondary">Amazon Partner</span></p>
+      </div>
+      <h1 class="large-heading max-w-3xl text-center">Turn Your Amazon Struggles into Success—Save Time, <span class="text-text-secondary">Maximize Profits!</span></h1>
+      <div class="flex justify-center mt-8">
+        <button class="btn-primary">Book a Free Consultation</button>
+      </div>
+      <div>
+        <img src="./public/Total Incomes Container.png" alt="Image" class="absolute top-20 -left-80">
+        <img src="./public/Review Container.png" alt="Image" class="absolute top-20 -right-80">
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+         BUSINESS DATA SECTION
+    ══════════════════════════════════════════ -->
+  <section>
+    <div class="container mx-auto py-14 px-4">
+      <p class="text-2xl font-semibold pb-8 text-center">Amazon Market Statistics Worldwide 2024</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="px-4 pt-8 pb-11 border border-border-base rounded-2xl">
+          <h2 class="pb-3 text-center">600 million</h2>
+          <p class="text-lg text-text-muted text-center">Amazon Offers Over Products</p>
+        </div>
+        <div class="px-4 pt-8 pb-11 border border-border-base rounded-2xl">
+          <h2 class="pb-3 text-center">$638.0 billion</h2>
+          <p class="text-lg text-text-muted text-center">Amazon Global Net Sales Revenue</p>
+        </div>
+        <div class="px-4 pt-8 pb-11 border border-border-base rounded-2xl">
+          <h2 class="pb-3 text-center">11.95 million</h2>
+          <p class="text-lg text-text-muted text-center">Amazon Handles Orders Daily.</p>
+        </div>
+        <div class="px-4 pt-8 pb-11 border border-border-base rounded-2xl">
+          <h2 class="pb-3 text-center">$1.6 billion</h2>
+          <p class="text-lg text-text-muted text-center">Amazon Average Daily Sales Revenue</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+         OUR STORY SECTION
+    ══════════════════════════════════════════ -->
+  <section>
+    <div class="max-w-3xl mx-auto pt-10 pb-24 px-4">
+      <div class="flex items-center justify-center gap-2 mx-auto mb-4">
+        <img src="./public/amazon.png" alt="Amazon">
+        <p>Our <span class="text-text-secondary">Story</span></p>
+      </div>
+      <h2 class="text-center pb-4">Struggling With Amazon Sales? Let’s Scale Your Business—<span class="text-text-secondary">Faster, Smarter,</span> & Stress-Free!</h2>
+      <p class="max-w-xl mx-auto text-center pb-10 text-text-muted text-lg">Amazon is complex, but success doesn’t have to be. At <span class="text-text-secondary">FINTRIXX,</span> we help sellers increase sales, optimize ads, rank higher, and expand into new markets —without wasting time or money. 🎯 Let’s turn your struggles into scalable success!</p>
+      <div class="flex justify-center">
+        <button class="btn-primary">Book a Free Strategy Call</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+         WHY CHOOSE US SECTION
+    ══════════════════════════════════════════ -->
+  <section class="bg-bg-dark">
+    <div class="container mx-auto py-24 px-4 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-5 lg:gap-20">
+      <div class="flex-1">
+        <div class="flex items-center gap-2 mb-3">
+          <img src="./public/amazon.png" alt="Amazon">
+          <p class="text-text-white">Why <span class="text-text-secondary">Choose Us</span></p>
+        </div>
+        <h1 class="pb-4 text-text-white">Why Choose <span class="text-text-secondary">FINTRIXX?</span></h1>
+        <p class="opacity-90 text-lg text-text-white pb-10">Amazon is tough—we make it easy. At FINTRIXX, we help sellers rank higher, scale faster, & sell smarter. We analyze trends, optimize ads, manage inventory, & protect your account so you can focus on your business. <br>
+          🚀 No more guesswork. No more wasted money. Just real results.</p>
+        <button class="btn-secondary">Book a Free Consultation</button>
+      </div>
+      <div class="flex-1 flex items-center justify-start sm:py-24 lg:pl-3 md:overflow-x-hidden w-full">
+        <div class="w-[calc(14rem-8px)] sm:w-[calc(18rem-8px)] h-52 sm:h-72 bg-bg-secondary flex items-center justify-center rounded-full border-b-8 border-primary relative scale-50 sm:scale-75 md:scale-50 lg:scale-75 xl:scale-100">
+          <img src="./public/react-logo.png" alt="Image" class="">
+          <div class="absolute -right-36 rotate-3">
+            <div class="relative">
+              <img src="./public/shape-1.png" alt="Image">
+              <img src="./public/shape-2.png" alt="Image" class="absolute -top-3 right-0 rotate-2">
+              <div>
+                <div class="bg-bg-secondary flex items-center gap-3 px-5 py-4 rounded-2xl absolute top-0 -right-16">
+                  <div class="bg-white bg-opacity-10 rounded-full p-2">
+                    <img src="./public/service-1.png" alt="Icon" class="w-6 h-6">
+                  </div>
+                  <p class="text-text-white text-lg">Proven Expertise</p>
+                </div>
+                <div class="bg-bg-secondary flex items-center gap-3 px-5 py-4 rounded-2xl absolute top-28 -right-28">
+                  <div class="bg-white bg-opacity-10 rounded-full p-2">
+                    <img src="./public/service-1.png" alt="Icon" class="w-6 h-6">
+                  </div>
+                  <p class="text-text-white text-lg">Maximized Visibility</p>
+                </div>
+                <div class="bg-bg-secondary flex items-center gap-3 px-5 py-4 rounded-2xl absolute bottom-28 -right-28">
+                  <div class="bg-white bg-opacity-10 rounded-full p-2">
+                    <img src="./public/service-1.png" alt="Icon" class="w-6 h-6">
+                  </div>
+                  <p class="text-text-white text-lg">Strategic Growth</p>
+                </div>
+                <div class="bg-bg-secondary flex items-center gap-3 px-5 py-4 rounded-2xl absolute bottom-0 -right-28">
+                  <div class="bg-white bg-opacity-10 rounded-full p-2">
+                    <img src="./public/service-1.png" alt="Icon" class="w-6 h-6">
+                  </div>
+                  <p class="text-text-white text-lg">Exclusive Partnerships</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+         OUR SERVICES SECTION
+    ══════════════════════════════════════════ -->
+  <section>
+    <div class="container mx-auto py-24 px-4">
+      <div class="pb-16">
+        <div class="flex items-center justify-center gap-2 mx-auto mb-3">
+          <img src="./public/amazon.png" alt="Amazon">
+          <p>Our <span class="text-text-secondary">Services</span></p>
+        </div>
+        <h1 class="text-center pb-4">Scale Smarter, <span class="text-text-secondary">Sell Faster</span></h1>
+        <p class="text-center opacity-80 text-lg">We handle everything Amazon so you can focus on growing.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-8 border border-border-base rounded-2xl">
+          <div class="flex justify-between gap-5">
+            <div>
+              <p class="text-lg text-text-secondary">Amazon Growth & Advertising</p>
+              <div class="my-3">
+                <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+              </div>
+            </div>
+            <div class="shrink-0">
+              <img src="./public/service-1.png" alt="Image">
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 2.4578C14.053 2.16035 13.0452 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 10.9548 21.8396 9.94704 21.5422 9" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M8.5 9.5L12 13L21.0002 3" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="text-text-muted">Bid & Budget Optimization – Higher ROI, lower ACOS.</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 2.4578C14.053 2.16035 13.0452 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 10.9548 21.8396 9.94704 21.5422 9" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M8.5 9.5L12 13L21.0002 3" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="text-text-muted">Amazon Account Health & Compliance – Avoid suspensions & violations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-8 border border-border-base rounded-2xl">
+          <div class="flex justify-between gap-5">
+            <div>
+              <p class="text-lg text-text-secondary">SEO & Product Ranking</p>
+              <div class="my-3">
+                <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+              </div>
+            </div>
+            <div class="shrink-0">
+              <img src="./public/service-2.png" alt="Image">
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 2.4578C14.053 2.16035 13.0452 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 10.9548 21.8396 9.94704 21.5422 9" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M8.5 9.5L12 13L21.0002 3" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="text-text-muted">Organic & Sponsored Ranking – More visibility, more sales</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 2.4578C14.053 2.16035 13.0452 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 10.9548 21.8396 9.94704 21.5422 9" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M8.5 9.5L12 13L21.0002 3" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="text-text-muted">Keyword & Competitor Analysis – Stay ahead of the competition.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-8 border border-border-base rounded-2xl">
+          <div class="flex justify-between gap-5">
+            <div>
+              <p class="text-lg text-text-secondary">Inventory & Account Management</p>
+              <div class="my-3">
+                <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+              </div>
+            </div>
+            <div class="shrink-0">
+              <img src="./public/service-3.png" alt="Image">
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 2.4578C14.053 2.16035 13.0452 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 10.9548 21.8396 9.94704 21.5422 9" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M8.5 9.5L12 13L21.0002 3" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="text-text-muted">Inventory Forecasting & Restocking – No stockouts, no overstocking.</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 2.4578C14.053 2.16035 13.0452 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 10.9548 21.8396 9.94704 21.5422 9" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M8.5 9.5L12 13L21.0002 3" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="text-text-muted">Amazon Account Health & Compliance – Avoid suspensions & violations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-8 border border-border-base rounded-2xl">
+          <div class="flex justify-between gap-5">
+            <div>
+              <p class="text-lg text-text-secondary">Scaling & Expansion</p>
+              <div class="my-3">
+                <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+              </div>
+            </div>
+            <div class="shrink-0">
+              <img src="./public/service-4.png" alt="Image">
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 2.4578C14.053 2.16035 13.0452 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 10.9548 21.8396 9.94704 21.5422 9" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M8.5 9.5L12 13L21.0002 3" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="text-text-muted">Launching New Products – Market research-backed success.</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 2.4578C14.053 2.16035 13.0452 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 10.9548 21.8396 9.94704 21.5422 9" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M8.5 9.5L12 13L21.0002 3" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p class="text-text-muted">International Expansion – Sell beyond borders with ease.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+         OUR APPROACH SECTION
+    ══════════════════════════════════════════ -->
+  <section class="bg-bg-dark">
+    <div class="container mx-auto py-24 px-4">
+      <div class="grid xl:grid-cols-2 items-center justify-center gap-10 lg:gap-20">
+        <div class="flex gap-6 mx-auto ">
+          <img src="./public/mission.png" alt="Image" class="sm:mb-24">
+          <img src="./public/vision.png" alt="Image" class="mt-24 hidden sm:block">
+        </div>
+        <div class="">
+          <h1 class="text-text-white pb-14">Our <span class="text-text-secondary">Approach</span></h1>
+          <div class="pb-5 border-b border-gray-600 mb-5">
+            <div class="pl-5 border-l-2 border-gray-600 flex gap-2">
+              <p class="text-2xl text-text-white">Mission</p>
+            </div>
+          </div>
+          <div>
+            <div class="pl-5 border-l-2 border-primary">
+              <div class="flex gap-2 pb-4">
+                <p class="text-2xl text-text-white">Vision</p>
+              </div>
+              <p class="text-text-white opacity-90 pb-8">Founded in 1983, SecureWealth was created to address the challenges of traditional banking—long queues, complicated processes, and limited access. We started with a vision to make banking simple, accessible, and convenient for everyone. Today, we proudly serve 7+ million users, helping them manage their finances with ease.</p>
+              <div>
+                <button class="btn-secondary">Book a Free Strategy Call</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+         GROWTH BUSINESS SECTION
+    ══════════════════════════════════════════ -->
+  <section>
+    <div class="container mx-auto py-24 px-4">
+      <div class="pb-16">
+        <div class="flex items-center justify-center gap-2 mx-auto mb-3">
+          <img src="./public/amazon.png" alt="Amazon">
+          <p>Growth <span class="text-text-secondary">Business</span></p>
+        </div>
+        <h1 class="max-w-xl mx-auto text-center pb-4">The Harsh Reality of Selling on <span class="text-text-secondary">Amazon</span></h1>
+        <p class="max-w-md mx-auto text-center opacity-80 text-lg">Selling on Amazon is tough. Do these struggles sound familiar? Without the
+          right strategy, you’re losing money, time, and opportunities.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pb-16">
+        <div class="p-6 border border-border-base rounded-2xl">
+          <div class="grid justify-start">
+            <p class="text-lg text-text-secondary">Lost in Competition?</p>
+            <div class="my-3">
+              <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+            </div>
+          </div>
+          <p class="text-text-muted text-lg">10M+ sellers & 350M+ product how do you stand out?</p>
+        </div>
+        <div class="p-6 border border-border-base rounded-2xl">
+          <div class="grid justify-start">
+            <p class="text-lg text-text-secondary">Burning Cash on Ads?</p>
+            <div class="my-3">
+              <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+            </div>
+          </div>
+          <p class="text-text-muted text-lg">PPC feels like a money pit with no returns.</p>
+        </div>
+        <div class="p-6 border border-border-base rounded-2xl">
+          <div class="grid justify-start">
+            <p class="text-lg text-text-secondary">Low Rankings?</p>
+            <div class="my-3">
+              <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+            </div>
+          </div>
+          <p class="text-text-muted text-lg">Amazon’s complex algorithms keep changing. </p>
+        </div>
+        <div class="p-6 border border-border-base rounded-2xl">
+          <div class="grid justify-start">
+            <p class="text-lg text-text-secondary">Inventory Headaches?</p>
+            <div class="my-3">
+              <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+            </div>
+          </div>
+          <p class="text-text-muted text-lg">Stockouts, overstocking, at the wrong time?</p>
+        </div>
+        <div class="p-6 border border-border-base rounded-2xl">
+          <div class="grid justify-start">
+            <p class="text-lg text-text-secondary">Risk of Account Suspension?</p>
+            <div class="my-3">
+              <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+            </div>
+          </div>
+          <p class="text-text-muted text-lg">Amazon’s strict policies make selling stressful.</p>
+        </div>
+        <div class="p-6 border border-border-base rounded-2xl">
+          <div class="grid justify-start">
+            <p class="text-lg text-text-secondary">Wasting Time & Getting Stuck?</p>
+            <div class="my-3">
+              <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+            </div>
+          </div>
+          <p class="text-text-muted text-lg">Managing it all alone is overwhelming</p>
+        </div>
+      </div>
+      <div class="w-fit mx-auto">
+        <button class="btn-primary">Talk to an Expert</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+         GROWTH BUSINESS SECTION
+    ══════════════════════════════════════════ -->
+  <section class="bg-bg-dark">
+    <div class="container mx-auto py-24 px-4">
+      <div class="pb-16">
+        <div class="flex items-center justify-center gap-2 mx-auto mb-3">
+          <img src="./public/amazon.png" alt="Amazon">
+          <p class="text-text-white">Growth <span class="text-text-secondary">Business</span></p>
+        </div>
+        <h1 class="max-w-md mx-auto text-center pb-4 text-text-white">How We Help You Win on <span class="text-text-secondary">Amazon</span></h1>
+        <p class="max-w-xs mx-auto text-center text-text-white text-lg opacity-90">At FINTRIXX, we don’t guess—we use data-driven strategies to scale your business.</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pb-16">
+        <div class="p-6 bg-bg-secondary rounded-2xl">
+          <div class="grid justify-start">
+            <p class="text-lg text-text-secondary">Lost in Competition?</p>
+            <div class="my-3">
+              <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+            </div>
+          </div>
+          <p class="text-text-white opacity-90 text-lg">10M+ sellers & 350M+ product how do you stand out?</p>
+        </div>
+        <div class="p-6 bg-bg-secondary rounded-2xl">
+          <div class="grid justify-start">
+            <p class="text-lg text-text-secondary">Burning Cash on Ads?</p>
+            <div class="my-3">
+              <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+            </div>
+          </div>
+          <p class="text-text-white opacity-90 text-lg">PPC feels like a money pit with no returns.</p>
+        </div>
+        <div class="p-6 bg-bg-secondary rounded-2xl">
+          <div class="grid justify-start">
+            <p class="text-lg text-text-secondary">Low Rankings?</p>
+            <div class="my-3">
+              <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+            </div>
+          </div>
+          <p class="text-text-white opacity-90 text-lg">Amazon’s complex algorithms keep changing. </p>
+        </div>
+        <div class="p-6 bg-bg-secondary rounded-2xl">
+          <div class="grid justify-start">
+            <p class="text-lg text-text-secondary">Inventory Headaches?</p>
+            <div class="my-3">
+              <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+            </div>
+          </div>
+          <p class="text-text-white opacity-90 text-lg">Stockouts, overstocking, at the wrong time?</p>
+        </div>
+        <div class="p-6 bg-bg-secondary rounded-2xl">
+          <div class="grid justify-start">
+            <p class="text-lg text-text-secondary">Risk of Account Suspension?</p>
+            <div class="my-3">
+              <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+            </div>
+          </div>
+          <p class="text-text-white opacity-90 text-lg">Amazon’s strict policies make selling stressful.</p>
+        </div>
+        <div class="p-6 bg-bg-secondary rounded-2xl">
+          <div class="grid justify-start">
+            <p class="text-lg text-text-secondary">Wasting Time & Getting Stuck?</p>
+            <div class="my-3">
+              <span class="block w-[3px] h-12 bg-primary opacity-20"></span>
+            </div>
+          </div>
+          <p class="text-text-white opacity-90 text-lg">Managing it all alone is overwhelming</p>
+        </div>
+      </div>
+      <div class="w-fit mx-auto">
+        <button class="btn-secondary">Talk to an Expert</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+         SERVICES SECTION
+    ══════════════════════════════════════════ -->
+  <section id="services" class="min-h-screen bg-gray-50 flex items-center justify-center">
+    service
+  </section>
+
+  <!-- ══════════════════════════════════════════
+          FOOTER 
+      ══════════════════════════════════════════ -->
+  <footer class="bg-bg-dark">
+    <div class="container mx-auto pt-24 pb-10 px-4">
+      <div class="grid md:grid-cols-5 gap-10 md:gap-5 pb-10">
+        <div class="md:col-span-3 max-w-md">
+          <img src="./public/Logo.png" alt="Logo" class=" w-8 h-8">
+          <p class="text-text-white pt-4">FINTRIXX – Your Amazon Growth Partner Since 2016, we boost Amazon success with expert SEO, PPC, and growth strategies.</p>
+        </div>
+        <div>
+          <p class="text-xl text-text-white pb-6">Home</p>
+          <ul class="space-y-4">
+            <li>
+              <a href="#" class="text-text-white hover:underline transition duration-300">Home</a>
+            <li>
+            </li>
+            <a href="#" class="text-text-white hover:underline">About</a>
+            </li>
+            <li>
+              <a href="#" class="text-text-white hover:underline">Services</a>
+            </li>
+            <li>
+              <a href="#" class="text-text-white hover:underline">Why Choose Us</a>
+            </li>
+            <li>
+              <a href="#" class="text-text-white hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xl text-text-white pb-6">Contact</p>
+          <a href="mailto:leadsbridgedemo@example.com" class="text-text-white hover:underline break-words">leadsbridgedemo@example.com</a>
+        </div>
+      </div>
+      <div class="pt-10 border-t border-border-base flex flex-wrap justify-between gap-5 ">
+        <p class="text-text-white">© 2025 Copyright Amazon</p>
+        <div class="flex items-center gap-5 md:gap-16 text-text-white">
+          <a href="#" class="text-text-white hover:underline">Privacy Policy</a>
+          <a href="#" class="text-text-white hover:underline">Terms & Conditions</a>
+        </div>
+      </div>
+  </footer>
+
+
+
+  <!-- ══════════════════════════════════════════
+       JAVASCRIPT
+  ══════════════════════════════════════════ -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
