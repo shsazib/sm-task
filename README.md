@@ -1,0 +1,52 @@
+# 🚀 SM Technology Task Project
+
+A modern web application built with **Vite.js** and **Vanilla JavaScript** as part of an interview assignment.
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/shsazib/sm-task.git
+
+# Navigate into the project directory
+cd sm-task
+
+# Install dependencies
+npm install
+```
+
+### Running the Development Server
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+## 🤝 Author
+
+**Your Name**
+- GitHub: [@your-username](https://github.com/shsazib)
+- LinkedIn: [your-linkedin](https://linkedin.com/in/shsazib)
+- Email: shsazibbhuiyan892939@example.com
+
+---
+
+## 📄 License
+
+This project is created for interview/assessment purposes.
