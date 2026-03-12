@@ -8,7 +8,6 @@ A modern web application built with **Vite.js** and **Vanilla JavaScript** as pa
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v16 or higher)
 - npm or yarn
 
 ### Installation
@@ -41,8 +40,8 @@ npm run build
 ## 🤝 Author
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/shsazib)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/shsazib)
+- GitHub: [Sh Sazib](https://github.com/shsazib)
+- LinkedIn: [Sh Sazib](https://linkedin.com/in/shsazib)
 - Email: shsazibbhuiyan892939@example.com
 
 ---
