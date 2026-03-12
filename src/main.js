@@ -14,7 +14,7 @@
         navbar.style.backdropFilter = '';
       }
 
-      navbar.classList.toggle('', scrolled);
+      navbar.classList.toggle('py-1', scrolled);
       navbar.classList.toggle('py-6', !scrolled);
       // Flip link colours (mobile links only)
       navbar.querySelectorAll('.mobile-link').forEach(el => {
