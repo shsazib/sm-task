@@ -42,7 +42,7 @@ npm run build
 **Your Name**
 - GitHub: [Sh Sazib](https://github.com/shsazib)
 - LinkedIn: [Sh Sazib](https://linkedin.com/in/shsazib)
-- Email: shsazibbhuiyan892939@example.com
+- Email: shsazibbhuiyan892939@gmail.com
 
 ---
 
